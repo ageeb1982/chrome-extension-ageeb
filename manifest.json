@@ -1,0 +1,25 @@
+{
+    "__comment2__": "manifest_version: 2",
+    "name": "ageeb extension",
+    "version": "0.1.0",
+    "description": "ageeb Chrome extension to test youtube comments",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.youtube.com/*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "ageeb Latest Covid Report"
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
+}
